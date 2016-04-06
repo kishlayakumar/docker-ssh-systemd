@@ -3,3 +3,6 @@ create image with
 
 docker build -f centos .
 docker run -d --privileged  -v /sys/fs/cgroup:/sys/fs/cgroup <image-id> /usr/sbin/init
+can pull image from docker hub as,
+
+docker pull kishlaya/centos7
