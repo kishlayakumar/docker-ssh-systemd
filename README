@@ -1,0 +1,5 @@
+Docker file for using systemd and ssh for Centos 7
+create image with
+
+docker build -f centos .
+docker run -d --privileged  -v /sys/fs/cgroup:/sys/fs/cgroup <image-id> /usr/sbin/init
